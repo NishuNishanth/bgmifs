@@ -307,7 +307,7 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
-            if time > 480:
+            if time > 900:
                 response = "Error: Time interval must be less than 600."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
